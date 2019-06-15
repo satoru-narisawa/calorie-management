@@ -11,6 +11,7 @@ class Foods extends Migration
     {
         Schema::create('foods', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer("date_id")->unsigned()->index();
             $table->string("food_name1",15)->nullable();;
             $table->string("food_name2",15)->nullable();;
             $table->string("food_name3",15)->nullable();;
@@ -32,6 +33,9 @@ class Foods extends Migration
             $table->integer("food_calorie9")->nullable();;
             $table->integer("food_calorie10")->nullable();;
             $table->timestamps();
+            
+            //外部キー制約
+            $table->foreign("date_id")->references("id")->on("dates");
         });
     }
 

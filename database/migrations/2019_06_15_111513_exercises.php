@@ -11,6 +11,7 @@ class Exercises extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer("date_id")->unsigned()->index();
             $table->integer("basis_use_calorie");
             $table->string("exercise_name1",15)->nullable();;
             $table->string("exercise_name2",15)->nullable();;
@@ -23,6 +24,8 @@ class Exercises extends Migration
             $table->integer("exercise_calorie4")->nullable();;
             $table->integer("exercise_calorie5")->nullable();;
             $table->timestamps();
+            
+            $table->foreign("date_id")->references("id")->on("dates");
         });
     }
 
