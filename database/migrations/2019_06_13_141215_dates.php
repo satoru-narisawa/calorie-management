@@ -23,6 +23,6 @@ class Dates extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('calories');
+        Schema::dropIfExists('dates');
     }
 }
