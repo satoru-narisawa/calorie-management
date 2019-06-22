@@ -18,6 +18,8 @@ class Dates extends Migration
             
             //外部キー制約
             $table->foreign("user_id")->references("id")->on("users");
+            //user_idとdateの組み合わせの重複を許さない。
+            $table->unique(["user_id","date"]);
         });
     }
 

@@ -63,7 +63,7 @@ for($i = 1;$i <= $wd1; $i++){
 }
 //checkdate関数　引数の年月日から存在する日付をだす　ここではとある年月の存在する日をプリントしている
 while(checkdate($m,$d,$y)){
-    $link = "schedule.php?ymd=%04d%02d%02d";
+    $link = "schedule?ymd=%04d%02d%02d";
     $datelink = sprintf($link,$y,$m,$d);
     print "<td><a href={$datelink}>{$d}</a></td>";
     if(date("w",mktime(0,0,0,$m,$d,$y)) == 6){
