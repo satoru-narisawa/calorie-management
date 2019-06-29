@@ -144,23 +144,23 @@ $d = intval(substr($ymd,6,2));
     <div class="col-2">
         <div>
             {!! Form::label("exercise_calorie1","運動1の消費カロリー") !!}
-            {!! Form::text("exercise_calorie1",old("exercise_calorie1"),["class" => "form-control","placeholder" => "kcal"]) !!}
+            {!! Form::number("exercise_calorie1",old("exercise_calorie1"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
             {!! Form::label("exercise_calorie2","運動2の消費カロリー") !!}
-            {!! Form::text("exercise_calorie2",old("exercise_calorie2"),["class" => "form-control","placeholder" => "kcal"]) !!}
+            {!! Form::number("exercise_calorie2",old("exercise_calorie2"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
             {!! Form::label("exercise_calorie3","運動3の消費カロリー") !!}
-            {!! Form::text("exercise_calorie3",old("exercise_calorie3"),["class" => "form-control","placeholder" => "kcal"]) !!}
+            {!! Form::number("exercise_calorie3",old("exercise_calorie3"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
             {!! Form::label("exercise_calorie4","運動4の消費カロリー") !!}
-            {!! Form::text("exercise_calorie4",old("exercise_calorie4"),["class" => "form-control","placeholder" => "kcal"]) !!}
+            {!! Form::number("exercise_calorie4",old("exercise_calorie4"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
             {!! Form::label("exercise_calorie5","運動5の消費カロリー") !!}
-            {!! Form::text("exercise_calorie5",old("exercise_calorie5"),["class" => "form-control","placeholder" => "kcal"]) !!}
+            {!! Form::number("exercise_calorie5",old("exercise_calorie5"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
     </div>
 </div>
