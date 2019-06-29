@@ -17,21 +17,13 @@ $d = intval(substr($ymd,6,2));
 
 基礎代謝　※必須！　
 <div class="row pb-4">
-    <div class="col-6">
+    <div class="col-md-6">
         {!! Form::number("basis_use_calorie",old("basis_use_calorie"),["class"=>"form-control","placeholder" => "数字のみ入力。単位はkcalで"]) !!}
-    </div>
-</div>
-<div class="row">
-    <div class="col-6">
-        <h3>摂取カロリー</h3>
-    </div>
-        <div class="col-6">
-        <h3>消費カロリー</h3>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-3">
+    <div class="col-md-3 col-6 mt-4 mb-4">
         <div>
             {!! Form::label("food_name1","食べ物1") !!}
             {!! Form::text("food_name1",old("food_name1"),["class"=>"form-control","placeholder" => "食べ物名を入力"]) !!}
@@ -74,51 +66,50 @@ $d = intval(substr($ymd,6,2));
         </div>
     </div>
     
-    <div class="col-2"> 
+    <div class="col-md-2 col-6 mt-4 mb-4"> 
         <div>
-            {!! Form::label("food_calorie1","食べ物1のカロリー") !!}
+            {!! Form::label("food_calorie1","食物1 kcal") !!}
             {!! Form::number("food_calorie1",old("food_calorie1"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie2","食べ物2のカロリー") !!}
+            {!! Form::label("food_calorie2","食物2 kcal") !!}
             {!! Form::number("food_calorie2",old("food_calorie2"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie3","食べ物3のカロリー") !!}
+            {!! Form::label("food_calorie3","食物3 kcal") !!}
             {!! Form::number("food_calorie3",old("food_calorie3"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie4","食べ物4のカロリー") !!}
+            {!! Form::label("food_calorie4","食物4 kcal") !!}
             {!! Form::number("food_calorie4",old("food_calorie4"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie5","食べ物5のカロリー") !!}
+            {!! Form::label("food_calorie5","食物5 kcal") !!}
             {!! Form::number("food_calorie5",old("food_calorie5"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie6","食べ物6のカロリー") !!}
+            {!! Form::label("food_calorie6","食物6 kcal") !!}
             {!! Form::number("food_calorie6",old("food_calorie6"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie7","食べ物7のカロリー") !!}
+            {!! Form::label("food_calorie7","食物7 kcal") !!}
             {!! Form::number("food_calorie7",old("food_calorie7"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie8","食べ物8のカロリー") !!}
+            {!! Form::label("food_calorie8","食物8 kcal") !!}
             {!! Form::number("food_calorie8",old("food_calorie8"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie9","食べ物9のカロリー") !!}
+            {!! Form::label("food_calorie9","食物9 kcal") !!}
             {!! Form::number("food_calorie9",old("food_calorie9"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("food_calorie10","食べ物10のカロリー") !!}
+            {!! Form::label("food_calorie10","食物10 kcal") !!}
             {!! Form::number("food_calorie10",old("food_calorie10"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
     </div>
     
-
-    <div class="offset-1 col-3">
+    <div class="offset-md-1 col-md-3 col-6 mt-4">
         <div>
             {!! Form::label("exercise_name1","運動1") !!}
             {!! Form::text("exercise_name1",old("exercise_name1"),["class" => "form-control","placeholder" => "運動名を入力"]) !!}
@@ -141,25 +132,25 @@ $d = intval(substr($ymd,6,2));
         </div>
     </div>
     
-    <div class="col-2">
+    <div class="col-md-2 col-6 mt-4">
         <div>
-            {!! Form::label("exercise_calorie1","運動1の消費カロリー") !!}
+            {!! Form::label("exercise_calorie1","運動1 kcal") !!}
             {!! Form::number("exercise_calorie1",old("exercise_calorie1"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("exercise_calorie2","運動2の消費カロリー") !!}
+            {!! Form::label("exercise_calorie2","運動2 kcal") !!}
             {!! Form::number("exercise_calorie2",old("exercise_calorie2"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("exercise_calorie3","運動3の消費カロリー") !!}
+            {!! Form::label("exercise_calorie3","運動3 kcal") !!}
             {!! Form::number("exercise_calorie3",old("exercise_calorie3"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("exercise_calorie4","運動4の消費カロリー") !!}
+            {!! Form::label("exercise_calorie4","運動4 kcal") !!}
             {!! Form::number("exercise_calorie4",old("exercise_calorie4"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
         <div>
-            {!! Form::label("exercise_calorie5","運動5の消費カロリー") !!}
+            {!! Form::label("exercise_calorie5","運動5 kcal") !!}
             {!! Form::number("exercise_calorie5",old("exercise_calorie5"),["class" => "form-control","placeholder" => "kcal"]) !!}
         </div>
     </div>
