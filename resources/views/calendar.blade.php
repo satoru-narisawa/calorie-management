@@ -35,7 +35,7 @@ print "<form method='POST' action=''>";
         }
         
         
-    print "</select>月".PHP_EOL;
+print "</select>月".PHP_EOL;
 print '<input type="submit" value="表示" name="sub1">';
 print "</form>";
 

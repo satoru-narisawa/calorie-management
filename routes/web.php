@@ -20,8 +20,7 @@ Route::post("signup","Auth\RegisterController@Register")->name("signup.post");
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
-//詳細ページ
-Route::get("show/{id}","DateController@show");
+
 
 //登録ページ
 Route::get("schedule","DateController@create");
