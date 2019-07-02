@@ -2,7 +2,7 @@
 
 @section("content")
 <div class="row">
-    <aside class="col-3">
+    <aside class="col-sm-4 col-md-3 mb-4">
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">{{ $user->name }}</h3>
@@ -13,8 +13,8 @@
         </div>
     </aside>
     
-    <div class="col-9">
-        <h3 class="text-center mb-4">{{ $y }}年{{ $m }}月{{ $d }}日のカロリー詳細</h3>
+    <div class="col-sm-8 col-md-9 mb-4">
+        <h4 class="text-center mb-4">{{ $y }}年{{ $m }}月{{ $d }}日カロリー詳細</h4>
         <table class="table table-striped">
             <tr>
                 <td>摂取カロリー合計</td>
@@ -41,7 +41,7 @@
         </table>
     </div>
     
-    <div class="col-12 mt-4">
+    <div class="col-12">
     <h3>カロリー摂取、消費量の詳細内容</h3>
     </div>
     <div class="col-12 mt-4">

@@ -19,7 +19,7 @@ class DateController extends Controller
         $id = DB::table("dates")->where("user_id",$user_id)->where("date",$_GET["ymd"])->get();
         
         foreach($id as $dates){
-        $date = $dates->date;
+        $date = $dates->orderby("date")->date;
         }
         
         $y = intval(substr($date,0,4));
