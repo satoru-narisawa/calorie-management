@@ -16,10 +16,10 @@ class DateController extends Controller
 
         //datesテーブルのuser_idカラムがログインユーザーのidと一致し、　かつ　dateカラムが存在する場合1を返す
         $table = DB::table("dates")->where("user_id",$user_id)->where("date",$_GET["ymd"])->exists();
-        $id = DB::table("dates")->where("user_id",$user_id)->where("date",$_GET["ymd"])->get();
+        $id = DB::table("dates")->where("user_id",$user_id)->where("date",$_GET["ymd"])->orderby("date")->get();
         
         foreach($id as $dates){
-        $date = $dates->orderby("date")->date;
+        $date = $dates->date;
         }
         
         $y = intval(substr($date,0,4));
